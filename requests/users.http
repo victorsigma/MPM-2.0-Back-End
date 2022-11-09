@@ -1,0 +1,54 @@
+@api = http://localhost:3000/api/Users
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "UserId": 0,
+    "UserName": "Sigma2",
+    "UserPass": "pato123",
+    "Email": "test2@gmail.com"
+}
+
+###
+
+DELETE {{api}}/2
+
+
+###
+
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "UserId": 0,
+    "UserName": "Gabo3",
+    "UserPass": "pato123",
+    "Email": "gmoficial16@gmail.com"
+}
+
+###
+POST {{api}}/login-user
+Content-Type:  application/json
+
+{
+    "UserPass": "montesgaray",
+    "UserName": "victorsigma"
+}
+
+###
+
+PUT {{api}}/Icon/victorsigma
+Content-Type: application/json
+
+{
+    "UserIcon": "user_icon_4"
+}
+
+
+###
+GET https://ipgeolocation.abstractapi.com/v1/?api_key=56da8e8fe10b4e11908749c551d1d36f

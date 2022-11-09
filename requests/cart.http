@@ -1,0 +1,47 @@
+@api = http://localhost:3000/api/Cart
+
+GET {{api}}
+
+###
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "UserName": "victorsigma",
+    "StructureId": "SDFC",
+    "CountProduct": 10
+}
+
+###
+
+GET {{api}}/victorsigma
+
+
+###
+
+GET {{api}}/Total/victorsigma
+
+
+###
+
+GET {{api}}/Lenght/victorsigma
+
+
+###
+
+DELETE {{api}}/2
+
+
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "CountProduct": 200
+}
+
+
+###
+
+GET http://localhost:3000/api/Structures/SDFC
